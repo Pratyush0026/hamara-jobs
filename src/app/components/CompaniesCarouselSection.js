@@ -19,11 +19,11 @@ const CompaniesCarouselSection = () => {
     <section className="w-full bg-[#F5F5F5] py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold leading-none text-[#001242]">
-            Find jobs in India's <span className="text-[#FF9046]">top</span> companies
-          </h2>
-        </div>
+       <div className="text-center mb-12 lg:mb-16">
+  <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-extrabold leading-none text-[#001242]">
+    Find jobs in India{"'"}s <span className="text-[#FF9046]">top</span> companies
+  </h2>
+</div>
 
         {/* Carousel Container */}
         <div className="relative mt-32">

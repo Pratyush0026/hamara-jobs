@@ -17,9 +17,10 @@ const HamaraJobsSection = () => {
                     <div className="flex-1 w-full lg:w-1/2">
                         <div className="bg-white rounded-[32px] p-6 sm:p-8 lg:px-[60px] lg:py-12 shadow-lg h-auto lg:h-[443px] flex flex-col justify-center gap-6 lg:gap-[38px]">
                             {/* Main heading */}
-                            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-none text-[#001242]">
-                                Download 'Hamara Jobs' app
-                            </h2>
+                          {/* Main heading */}
+<h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-none text-[#001242]">
+    Download {"'"}Hamara Jobs{"'"} app
+</h2>
 
                             {/* Feature list */}
                             <div className="space-y-4 lg:space-y-6">

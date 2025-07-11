@@ -1,26 +1,212 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Custom CSS Variables for Color Palette */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors (International Klein Blue) */
+  --primary-0: #FFFFFF;
+  --primary-20: #ccd5ed;
+  --primary-40: #99abdb;
+  --primary-60: #6681c9;
+  --primary-70: #4d6cc0;
+  --primary-80: #3357b7;
+  --primary-90: #1a42ae;
+  --primary-100: #002DA5; /* Main Primary - this is what your navbar needs */
+  
+  /* Secondary Colors (Casablanca) */
+  --secondary-0: #FFFFFF;
+  --secondary-20: #fdf3da;
+  --secondary-40: #fbe8b5;
+  --secondary-60: #f9dc8f;
+  --secondary-80: #f7d16a;
+  --secondary-dark-80: #ffa66b;
+  --secondary-dark-90: #ff9b59;
+  --secondary-dark: #ff8046;
+  --secondary-main: #F5C545; /* Main Secondary */
+  
+  /* Neutral Colors (Athens Grey) */
+  --neutral-0: #ffffff;
+  --neutral-20: #f8f9fa;
+  --neutral-40: #D4DAE2;
+  --neutral-60: #A9B5C6;
+  --neutral-70: #94A3B8;
+  --neutral-80: #5E6977;
+  --neutral-90: #292E36;
+  --neutral-100: #0E1116;
+  --neutral-500: #222B45; /* Main Neutral */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--neutral-0);
+  color: var(--neutral-500);
+  line-height: 1.6;
 }
+
+/* Custom Utility Classes */
+.text-primary {
+  color: var(--primary-100);
+}
+
+.text-secondary {
+  color: var(--secondary-main);
+}
+
+.text-neutral {
+  color: var(--neutral-500);
+}
+
+.bg-primary {
+  background-color: var(--primary-100);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-main);
+}
+
+.bg-neutral {
+  background-color: var(--neutral-500);
+}
+
+.bg-light {
+  background-color: var(--neutral-20);
+}
+
+/* Navbar Styles */
+.navbar-container {
+  background: var(--primary-100);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  min-height: 84px;
+}
+
+.navbar-logo {
+  flex-shrink: 0;
+}
+
+.logo-image {
+  width: 130px;
+  height: 52px;
+  object-fit: contain;
+}
+
+/* Employer Login Button */
+.employer-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 60px;
+  background: var(--neutral-0);
+  color: var(--primary-100);
+  border: none;
+  border-radius: 16px;
+  padding: 8px 20px;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'IBM Plex Sans', 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+.employer-login-btn:hover {
+  background: var(--primary-20);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employer-login-btn:active {
+  transform: translateY(0);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.btn-text {
+  font-family: 'IBM Plex Sans', 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+
+/* Desktop Actions */
+.navbar-actions-desktop {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--neutral-0);
+  border-radius: 2px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+

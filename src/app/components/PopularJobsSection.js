@@ -27,10 +27,10 @@ const PopularJobsSection = () => {
             {jobCategories.map((job, index) => (
               <div
                 key={index}
-                className="group relative bg-[#1A42AE] rounded-[24px] p-6 lg:px-[24px] lg:py-[12px] h-[109px] flex items-center justify-between cursor-pointer overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#F5C545]"
+                className="group relative bg-[#1A42AE] rounded-[24px] p-6 lg:px-[24px] lg:py-[12px] h-[109px] flex items-center justify-between cursor-pointer overflow-hidden transition-all duration-700 ease-in-out hover:bg-[#F5C545]"
               >
                 {/* Sliding background effect */}
-                <div className="absolute inset-0 bg-[#F5C545] transform translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out rounded-[24px]"></div>
+                <div className="absolute inset-0 bg-[#F5C545] transform translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out rounded-[24px]"></div>
                 
                 {/* Content */}
                 <div className="relative z-10 flex items-center justify-between w-full">

@@ -1,10 +1,18 @@
+import CareerAdviceSection from './components/CareerAdviceSection'
 import CompaniesCarouselSection from './components/CompaniesCarouselSection'
+import FAQSection from './components/FAQSection'
+import Footer from './components/Footer'
+import ForEmployeesSection from './components/ForEmployeesSection'
 import HamaraJobsSection from './components/HamaraJobsSection'
 import HeroSection from './components/Hero'
 import HiringCandidatesSection from './components/HiringCandidateSection'
+import KnowAboutJobsSection from './components/KnowAboutJobsSection'
 import Navbar from './components/Navbar'
 import PopularJobsSection from './components/PopularJobsSection'
 import PopularJobTypes from './components/PopularJobTypes'
+import TestimonialsSection from './components/TestimonialSection'
+import TopCitiesSection from './components/TopCitiesSection'
+import TrustedCompaniesSection from './components/TrustedCompaniesSection'
 import './globals.css'
 
 export const metadata = {
@@ -28,6 +36,14 @@ export default function RootLayout({ children }) {
         <HiringCandidatesSection/>
         <PopularJobsSection/>
         <CompaniesCarouselSection/>
+       <TopCitiesSection/>
+       <KnowAboutJobsSection/>
+       <CareerAdviceSection/>
+       <TestimonialsSection/>
+       <ForEmployeesSection/>
+       <TrustedCompaniesSection/>
+       <FAQSection/>
+       <Footer/>
         <main>
           {children}
         </main>

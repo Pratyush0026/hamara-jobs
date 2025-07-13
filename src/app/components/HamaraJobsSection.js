@@ -15,12 +15,12 @@ const HamaraJobsSection = () => {
 
                     {/* Right side - Info box */}
                     <div className="flex-1 w-full lg:w-1/2">
-                        <div className="bg-white rounded-[32px] p-6 sm:p-8 lg:px-[60px] lg:py-12 shadow-lg h-auto lg:h-[443px] flex flex-col justify-center gap-6 lg:gap-[38px]">
+                        <div className="bg-white rounded-[32px] p-6 sm:p-8 lg:px-[60px] lg:py-12 shadow-sm h-auto lg:h-[443px] flex flex-col justify-center gap-6 lg:gap-[38px]">
                             {/* Main heading */}
-                          {/* Main heading */}
-<h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-none text-[#001242]">
-    Download {"'"}Hamara Jobs{"'"} app
-</h2>
+                            {/* Main heading */}
+                            <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold leading-none text-[#001242]">
+                                Download {"'"}Hamara Jobs{"'"} app
+                            </h2>
 
                             {/* Feature list */}
                             <div className="space-y-4 lg:space-y-6">
@@ -79,8 +79,8 @@ const HamaraJobsSection = () => {
                                 <Image
                                     src="/assets/qr_code.png"
                                     alt="QR Code"
-                                    width={80}
-                                    height={80}
+                                    width={100}
+                                    height={100}
                                     className="border-2 border-gray-200 rounded-lg p-2"
                                 />
                             </div>

@@ -292,7 +292,7 @@ const CitiesSection = () => {
                         fontSize: "clamp(24px, 4vw, 48px)",
                     }}
                 >
-                    Find jobs in India's top cities
+                    Find jobs in India&apos;s top cities
                 </h2>
             </div>
 

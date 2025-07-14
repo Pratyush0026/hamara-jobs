@@ -1265,7 +1265,7 @@ const TestimonialsSection = () => {
       });
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+ }, [testimonials.length]);
 
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);

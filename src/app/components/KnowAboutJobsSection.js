@@ -106,7 +106,7 @@ const KnowAboutJobsSection = () => {
                 color: "#001242"
               }}
             >
-              If you're ready for a new challenging job, Browse Jobs on Qjobs App and look at our Popular Job Locations and Job Titles. Whatever type of job you're looking for, you can find it on Qjobs & skip the hassle of endless interviews and the troubles of relocating with Qjobs.
+             If you&apos;re ready for a new challenging job, Browse Jobs on Qjobs App and look at our Popular Job Locations and Job Titles. Whatever type of job you&apos;re looking for, you can find it on Qjobs & skip the hassle of endless interviews and the troubles of relocating with Qjobs.
             </p>
           </div>
         </div>

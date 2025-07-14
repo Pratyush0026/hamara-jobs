@@ -302,7 +302,7 @@ const FooterSection = () => {
                                     color: '#FFFFFF'
                                 }}
                             >
-                                Copyright© Quess Corp Limited 2020. All rights reserved
+                                Copyright© Quess Corp Limited 2025. All rights reserved
                             </p>
                         </div>
 

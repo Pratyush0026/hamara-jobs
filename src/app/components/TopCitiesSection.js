@@ -295,7 +295,7 @@ const TopCitiesSection = () => {
             textColor: "#001242",
             arrowColor: "#001242",
             buttonColor: "#001242",
-            image: "/assets/bengaluru.png",
+            image: "/assets/Bengaluru.png",
         },
         {
             name: "Pune",
@@ -303,7 +303,7 @@ const TopCitiesSection = () => {
             textColor: "#FFFFFF",
             arrowColor: "#FFFFFF",
             buttonColor: "#FFFFFF",
-            image: "/assets/pune.png",
+            image: "/assets/Pune.png",
         },
         {
             name: "Mumbai",
@@ -311,7 +311,7 @@ const TopCitiesSection = () => {
             textColor: "#F5C545",
             arrowColor: "#F5C545",
             buttonColor: "#F5C545",
-            image: "/assets/mumbai.png",
+            image: "/assets/Mumbai.png",
         },
         {
             name: "Jaipur",
@@ -319,7 +319,7 @@ const TopCitiesSection = () => {
             textColor: "#FFFFFF",
             arrowColor: "#FFFFFF",
             buttonColor: "#FFFFFF",
-            image: "/assets/jaipur.png",
+            image: "/assets/Jaipur.png",
         },
     ]
 
